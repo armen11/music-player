@@ -1,0 +1,143 @@
+html, main {
+    height: 100%;
+}
+
+body {
+    height: calc(100% - 51px);
+}
+
+.content{
+    margin-top: 51px;
+    height: inherit;
+}
+
+.content > div.row {
+    height: inherit;
+}
+
+main .bottom-position {
+    bottom: 0;
+    position: absolute;
+    width: inherit;
+}
+
+.sidebar{
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+}
+
+.genres-list-item{
+    padding: 4px 0;
+    border-bottom: 1px solid #DDD;
+}
+
+.genres-list-item .genre-item-name{
+    color: indianred;
+}
+
+.genres-list-item select.genre-item-options{
+    float: right;
+}
+
+.ui-selecting {
+    background: #FECA40 !important;
+}
+.ui-selected {
+    background: #F39814 !important;
+    color: white !important;
+}
+
+#play_list {
+    padding: 0;
+    height: 200px;
+}
+
+#played_list {
+    padding: 15px;
+    height: 230px;
+    overflow-y: scroll;
+}
+
+#play_list, #played_list{
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#play_list li, #played_list li {
+    margin: 3px;
+    padding: 5px;
+    display: block;
+}
+
+.live {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border-color: #5cb85c;
+}
+
+.live .header {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.live .body {
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+.played {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border-color: #337ab7;
+}
+
+.played .header {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.glyphicon-play {
+    float: right;
+    font-size: 20px;
+    color: red;
+}
+
+li span {
+    display: inline-block;
+}
+
+li span:first-child {
+    text-overflow: ellipsis;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+main .row {
+    padding: 10px;
+}
